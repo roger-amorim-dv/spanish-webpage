@@ -3,6 +3,7 @@ import userEvent from "@testing-library/user-event";
 import { beforeEach, describe, expect, it } from "vitest";
 import { LanguageProvider, useLanguage } from "./language-provider";
 import { SiteHeader } from "./site-header";
+import AdminPage from "@/app/admin/page";
 
 function CopyProbe() {
   const { t } = useLanguage();
@@ -26,5 +27,14 @@ describe("language switching", () => {
     expect(screen.getAllByRole("link", { name: "Cursos" })[0]).toHaveAttribute("href", "#courses");
     expect(screen.getAllByRole("link", { name: "Método" })[0]).toHaveAttribute("href", "#method");
     expect(screen.getAllByRole("link", { name: "Área de estudiantes" })[0]).toHaveAttribute("href", "/members");
+  });
+
+  it("opens Natalia's announcement composer in the admin prototype", async () => {
+    const user = userEvent.setup();
+    render(<LanguageProvider><AdminPage /></LanguageProvider>);
+    expect(screen.getByRole("heading", { name: "¡Buenos días, Natalia!" })).toBeInTheDocument();
+    await user.click(screen.getByRole("button", { name: "Nuevo comunicado" }));
+    expect(screen.getByRole("dialog", { name: "Crear comunicado" })).toBeInTheDocument();
+    expect(screen.getByRole<HTMLTextAreaElement>("textbox", { name: "Mensaje" }).value).toContain("expresiones colombianas");
   });
 });
