@@ -93,7 +93,7 @@ export function HomePage() {
           <div className="container final-cta">
             <div className="final-spark spark-left" /><div className="final-spark spark-right" />
             <p className="eyebrow">{t.final.eyebrow}</p><h2>{t.final.title}</h2><p>{t.final.text}</p>
-            <a href="mailto:hola@habla.example?subject=Habla%20waitlist" className="button button-light">{t.final.cta}<ArrowRight /></a>
+            <a href="mailto:hola@hablago.example?subject=Habla%20Go%20waitlist" className="button button-light">{t.final.cta}<ArrowRight /></a>
             <small><Check />{t.final.note}</small>
           </div>
         </section>

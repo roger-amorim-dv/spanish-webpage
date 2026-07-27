@@ -8,9 +8,9 @@ import type { Locale } from "@/lib/i18n";
 
 export function Brand({ inverse = false }: { inverse?: boolean }) {
   return (
-    <Link href="/" className={`brand focus-ring ${inverse ? "text-white" : "text-ink"}`} aria-label="Habla, home">
+    <Link href="/" className={`brand focus-ring ${inverse ? "text-white" : "text-ink"}`} aria-label="Habla Go, home">
       <span className="brand-mark" aria-hidden="true">H</span>
-      <span>habla<span className="text-pink">.</span></span>
+      <span>Habla <span className="text-pink">Go</span><span className="text-pink">.</span></span>
     </Link>
   );
 }

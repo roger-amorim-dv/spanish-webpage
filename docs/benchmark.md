@@ -51,7 +51,7 @@ Research date: 24 July 2026. This benchmark reviews current public experiences a
 - Decorative visuals should simplify or disappear on small screens while the main message and next action stay above the fold.
 - Menus need explicit expanded state, keyboard operation, and visible focus.
 
-## Decisions for Habla
+## Decisions for Habla Go
 
 1. **Positioning:** Lead with “Speak Spanish. Open your world.” and support it with explicit relevance to students in Brazil and the United States.
 2. **Identity:** Use confident blue and energetic pink with cream, ink, yellow, and soft periwinkle neutrals. A conversation card and Colombian sun motif make the hero ownable without stock imagery.

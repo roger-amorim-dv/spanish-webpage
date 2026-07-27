@@ -7,17 +7,17 @@ const sans = DM_Sans({ subsets: ["latin"], variable: "--font-sans", display: "sw
 const display = Fraunces({ subsets: ["latin"], variable: "--font-display", display: "swap" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://habla-connect.com"),
-  title: { default: "Habla — Español para la vida real", template: "%s | Habla" },
+  metadataBase: new URL("https://hablago.example"),
+  title: { default: "Habla Go — Español para la vida real", template: "%s | Habla Go" },
   description: "Aprende español conversando con profesores colombianos y una comunidad cercana.",
   openGraph: {
-    title: "Habla — Español para la vida real",
+    title: "Habla Go — Español para la vida real",
     description: "Clases humanas, cultura viva y una ruta hecha para que hables con confianza.",
     type: "website",
     locale: "es",
     alternateLocale: ["pt_BR", "en_US"],
   },
-  twitter: { card: "summary_large_image", title: "Habla — Español para la vida real" },
+  twitter: { card: "summary_large_image", title: "Habla Go — Español para la vida real" },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

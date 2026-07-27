@@ -1,4 +1,4 @@
-# Habla
+# Habla Go
 
 First-version multilingual website and student-area prototype for Natalia and José’s Spanish-learning platform.
 
